@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+			rel="stylesheet">
+    <title>Nominate Us!</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="circle-shape">
+            <a
+                href="https://www.instagram.com/coralbeancafecc/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img
+                    src="images/pic.png"
+                    alt="prof pic"
+                    class="profile-pic"
+                />
+            </a>
+        </div>
+        <a
+            href="https://www.instagram.com/coralbeancafecc/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="ig-link"
+        >
+            @coralbeancafecc
+        </a>
+
+       
+        <hr>
+        
+        <p>Support us by nominating us for The Bend Mag's Best of The Best in any or all 
+            of these categories!
+        </p>
+        
+        <hr>
+        <input type="checkbox" id="cafe" name="category" value="cafe">
+        <label for="cafe">Cafe</label><br>
+
+        <input type="checkbox" id="coffee" name="category" value="cofee">
+        <label for="coffee">Coffee</label><br>
+
+        <input type="checkbox" id="dessert" name="category" value="dessert">
+        <label for="dessert">Dessert</label><br>
+
+        <input type="checkbox" id="mixologist" name="category" value="mixologist">
+        <label for="mixologist">Mixologist: Barry (Remember: Barista means bartender!)</label><br>
+
+        <input type="checkbox" id="new-restaurant" name="category" value="new-restaurant">
+        <label for="new-restaurant">New Restaurant</label><br>
+
+        <input type="checkbox" id="baked-goods" name="category" value="baked-goods">
+        <label for="baked-goods">Baked Goods</label><br>
+
+        <input type="checkbox" id="breakfast-tacos" name="category" value="breakfast-tacos">
+        <label for="breakfast-tacos">Breakfast Tacos</label><br>
+
+        <input type="checkbox" id="hangout-spot" name="category-" value="hangout-spot">
+        <label for="hangout-spot">Hangout Spot</label><br>
+
+        <input type="checkbox" id="podcast" name="category" value="podcast">
+        <label for="podcast">Podcast</label><br>
+
+        <input type="checkbox" id="event-venue" name="category" value="event-venue">
+        <label for="event-venue">Event Venue</label><br>
+
+        <script language="JavaScript">
+            function toggle(source) {
+            checkboxes = document.getElementsByName('category');
+            for(var i=0, n=checkboxes.length;i<n;i++) {
+            checkboxes[i].checked = source.checked;
+  }
+        </script>
+            
+        <input type="checkbox" id="select-all" onClick="toggle(this)">Select All
+
+
+       
+    </div>
+
+    <div class="email-container">
+        <input type="email" id="email" name="email" placeholder="Email..">    
+    </div>
+
+    <div class="button-container">
+        <button onClick="nomiateFunc()" type="button">Send It!</button>
+    </div>
+    
+    
+    
+    
+
+</body>
+
+</html>
